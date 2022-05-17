@@ -25,12 +25,8 @@ jobs:
         uses: hexlet/project-action@release
         with:
           hexlet-id: ${{ secrets.HEXLET_ID }}
-   lint: 
+  lint: 
     runs-on: ubuntu-latest
-
     steps:
-     
-      - uses: actions/checkout@v2
-      
       - uses: actions/setup-node@v1
       - run : make lint
