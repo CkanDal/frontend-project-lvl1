@@ -29,4 +29,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: start linter
-        run: make lint
+        run : make lint
