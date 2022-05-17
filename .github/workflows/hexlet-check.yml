@@ -25,8 +25,4 @@ jobs:
         uses: hexlet/project-action@release
         with:
           hexlet-id: ${{ secrets.HEXLET_ID }}
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: start linter
         run : make lint
