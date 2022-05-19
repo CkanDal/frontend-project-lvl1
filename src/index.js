@@ -8,7 +8,7 @@ const name = () => {
 };
 
 const question = (n) => {
-    console.log(n);
+  console.log(n);
 };
 
 const anwer = () => {
@@ -17,19 +17,14 @@ const anwer = () => {
 };
 
 const randomNumber1 = () => {
-  let Number1 = Math.floor(Math.random() * 10);
+  const Number1 = Math.floor(Math.random() * 10);
   return Number1;
 };
 const randomNumber2 = () => {
-let Number2 = Math.floor(Math.random() * 10);
-return Number2;
+  const Number2 = Math.floor(Math.random() * 10);
+  return Number2;
 };
 
-const Congratulations = () => {
-  sum = 0;
-  if (sum === 3) {
-    console.log(`Congratulations, ${user}!`);
-  }
-}
-
-export {name, question, anwer,randomNumber1, randomNumber2, Congratulations};
+export {
+  name, question, anwer, randomNumber1, randomNumber2,
+};

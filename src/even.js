@@ -4,7 +4,7 @@ import { name, question } from './index.js';
 const even = () => {
   const number = [15, 6, 7];
   let sum = 0;
-  let user = name();
+  const user = name();
   question('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < number.length; i += 1) {
     console.log(`Question: ${number[i]}`);
