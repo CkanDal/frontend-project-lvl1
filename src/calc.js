@@ -3,7 +3,6 @@ import {
   question,
   anwer,
   randomNumber1,
-  randomNumber2,
 } from './index.js';
 
 const user = name();
@@ -15,7 +14,7 @@ function calc() {
   switch (znak) {
     case '+':
       const Number1 = randomNumber1();
-      const Number2 = randomNumber2();
+      const Number2 = randomNumber1();
       question(`Question: ${Number1} + ${Number2}`);
       const Answer = anwer();
       const result = Number1 + Number2;
@@ -31,7 +30,7 @@ function calc() {
 
     case '*':
       const Number3 = randomNumber1();
-      const Number4 = randomNumber2();
+      const Number4 = randomNumber1();
       question(`Question: ${Number3} \* ${Number4}`);
       const Answer1 = anwer();
       const result1 = Number3 * Number4;
@@ -47,7 +46,7 @@ function calc() {
 
     case '-':
       const Number5 = randomNumber1();
-      const Number6 = randomNumber2();
+      const Number6 = randomNumber1();
       question(`Question: ${Number5} \- ${Number6}`);
       const Answer2 = anwer();
       const result2 = Number5 - Number6;
@@ -61,13 +60,14 @@ function calc() {
         break;
       }
     default:
-    console.log('Return');
+      console.log('Return');
   }
   if (sum === 3) {
     console.log(`Congratulations, ${user}!`);
   } else if (sum < 3) {
     return calc();
   }
+  return 12;
 }
 
 export default calc;

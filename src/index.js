@@ -17,14 +17,15 @@ const anwer = () => {
 };
 
 const randomNumber1 = () => {
-  const Number1 = Math.floor(Math.random() * 10);
+  const Number1 = Math.floor(Math.random() * 100);
   return Number1;
 };
-const randomNumber2 = () => {
-  const Number2 = Math.floor(Math.random() * 10);
-  return Number2;
+const Number1 = randomNumber1();
+const Number2 = randomNumber1();
+const random = () => {
+  question(`Question: ${Number1}  ${Number2}`);
 };
 
 export {
-  name, question, anwer, randomNumber1, randomNumber2,
+  name, question, anwer, randomNumber1, random, Number1, Number2,
 };
