@@ -28,8 +28,6 @@ function gcd() {
       arr2.push(number);
     }
   }
-
-  console.log(arr2);
   const Answer = anwer();
 
   if (Answer === String(arr2)) {
