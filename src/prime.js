@@ -12,7 +12,7 @@ const prime = () => {
   const index = Math.floor(Math.random() * 71);
   question(`Question: ${allNum[index]}`);
   const answer = anwer();
-  if (answer === 'yes' && primeNum.includes(allNum[index]) || answer === 'no' && !(primeNum.includes(allNum[index]))) {
+  if ((answer === 'yes' && primeNum.includes(allNum[index])) || (answer === 'no' && !(primeNum.includes(allNum[index])))) {
     console.log('Correct!');
     sum += 1;
   } else if (answer === 'yes') {
