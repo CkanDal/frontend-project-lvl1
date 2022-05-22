@@ -26,7 +26,6 @@ function gcd() {
   arr.forEach((number) => {
     if (arr1.includes(number)) {
       arr2.push(number);
-      console.log(arr2);
     }
   });
   const Answer = anwer();
