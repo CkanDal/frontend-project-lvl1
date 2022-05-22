@@ -28,13 +28,17 @@ function gcd() {
       arr2.push(number);
     }
   });
+  let nod = Math.max(...arr2);
   const Answer = anwer();
-  if (Answer === String(arr2) || Answer === '1') {
+  if (Answer === String(nod) || Answer === '1') {
     console.log('Correct!');
     sum += 1;
-  } else {
-    console.log(`${Answer} is wrong answer ;(. Correct answer was ${String(arr2)}.
-    Let's try again, ${user}!`);
+  } else if (Answer !== " ") {
+    console.log(`${Answer} is wrong answer ;(. Correct answer was ${String(nod)}.Let's try again, ${user}!`);
+    sum += 4;
+  }
+  else if (Answer === " ") {
+    console.log(`${Answer} is wrong answer ;(. Correct answer was '1'.Let's try again, ${user}!`);
     sum += 4;
   }
   if (sum === 3) {
