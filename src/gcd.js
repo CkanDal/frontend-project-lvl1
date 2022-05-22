@@ -5,8 +5,9 @@ question('Find the greatest common divisor of given numbers.');
 let sum = 0;
 
 function gcd() {
-  const Number1 = Math.floor(Math.random() * 100);
-  const Number2 = Math.floor(Math.random() * 100);
+  const Number1 = Math.floor(Math.random() * (100 - 1) + 1);
+  const Number2 = Math.floor(Math.random() * (100 - 1) + 1);
+  
 
   question(`Question: ${Number1} ${Number2}`);
 
