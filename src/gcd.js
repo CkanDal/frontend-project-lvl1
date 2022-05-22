@@ -33,7 +33,7 @@ function gcd() {
   if (Answer === String(nod) || Answer === '1') {
     console.log('Correct!');
     sum += 1;
-  } else if (Answer !== ' ') {
+  } else if (Answer !== ' ' && String(nod) !== -Infinity) {
     console.log(`${Answer} is wrong answer ;(. Correct answer was ${String(nod)}.Let's try again, ${user}!`);
     sum += 4;
   } else if (Answer === ' ') {
