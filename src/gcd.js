@@ -8,7 +8,7 @@ function gcd() {
   const Number1 = Math.floor(Math.random() * 100);
   const Number2 = Math.floor(Math.random() * 100);
 
-  question(`Question: ${Number1}  ${Number2}`);
+  question(`Question: ${Number1} ${Number2}`);
 
   const arr = [];
   const arr1 = [];
