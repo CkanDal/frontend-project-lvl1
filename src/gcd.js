@@ -23,11 +23,12 @@ function gcd() {
       arr1.push(i);
     }
   }
-  for (const number of arr) {
+  arr.forEach((number) =>  {
     if (arr1.includes(number)) {
       arr2.push(number);
+      console.log(arr2);
     }
-  }
+  });
   const Answer = anwer();
 
   if (Answer === String(arr2)) {
