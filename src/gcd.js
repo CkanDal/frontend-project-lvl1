@@ -29,8 +29,7 @@ function gcd() {
     }
   });
   const Answer = anwer();
-
-  if (Answer === String(arr2)) {
+  if (Answer === String(arr2) || Answer === '1') {
     console.log('Correct!');
     sum += 1;
   } else {
