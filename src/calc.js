@@ -22,8 +22,7 @@ function calc() {
         console.log('Correct!');
         sum += 1;
       } else {
-        console.log(`${Answer} is wrong answer ;(. Correct answer was ${result}.
-            Let's try again,${user}!`);
+        console.log(`${Answer} is wrong answer ;(. Correct answer was ${result}.Let's try again,${user}!`);
         sum += 4;
         break;
       }
@@ -40,8 +39,7 @@ function calc() {
         console.log('Correct!');
         sum += 1;
       } else {
-        console.log(`${Answer1}1 is wrong answer ;(. Correct answer was ${result1}.
-        Let's try again,${user}!`);
+        console.log(`${Answer1}1 is wrong answer ;(. Correct answer was ${result1}.Let's try again,${user}!`);
         sum += 4;
         break;
       }
@@ -58,8 +56,7 @@ function calc() {
         console.log('Correct!');
         sum += 1;
       } else {
-        console.log(`${Answer2} is wrong answer ;(. Correct answer was ${result2}.
-        Let's try again,${user}!`);
+        console.log(`${Answer2} is wrong answer ;(. Correct answer was ${result2}.Let's try again,${user}!`);
         sum += 4;
         break;
       }
